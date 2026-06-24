@@ -1,0 +1,3 @@
+Necesito crear el sitio web del estilo landing page para la marca Aurea Phi. Dicha marca es una empresa que se encarga de brindar soluciones de IA, Datos, Software, Agentes, etc. El objetivo es que dicha langing sirva para darse a conocer.
+
+El concepto de aurea phi alude a un estilo geometrico moderno, no necesitamos un diseño clasico y aburrido, pero tampoco algo futurista y estilo ciberseguridad con colores saturados. Todo lo contrario, algo equilibrado. Con respecto a la paleta de colores no tengo nada definido, pero por ahí una gama de verdes podría funcionar.

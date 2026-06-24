@@ -1,0 +1,10 @@
+# Brainstorming / herramientas internas
+.superpowers/
+
+# Mockups y renders de exploración de diseño
+logo-*.png
+hero-*.png
+
+# Sistema
+.DS_Store
+Thumbs.db
