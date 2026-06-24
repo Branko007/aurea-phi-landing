@@ -4,6 +4,7 @@
 # Mockups y renders de exploración de diseño
 logo-*.png
 hero-*.png
+captura-*.png
 
 # Sistema
 .DS_Store
