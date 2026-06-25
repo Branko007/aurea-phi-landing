@@ -123,6 +123,11 @@ ol,ul{list-style:none;}
 }
 .brand__mark{color:var(--acc);}
 .brand__dim{color:var(--muted);font-weight:400;}
+.brand__phi{
+  font-family:'Syne',var(--font);
+  color:var(--acc);font-weight:800;
+  letter-spacing:1px;
+}
 
 .nav__links{display:flex;gap:34px;}
 .nav__links a{
@@ -264,6 +269,32 @@ ol,ul{list-style:none;}
   background:linear-gradient(90deg,var(--acc),var(--acc-2),var(--acc-3));
   box-shadow:0 0 10px rgba(125,151,255,.5);
   transition:width .1s linear;
+}
+
+/* WhatsApp flotante — en índigo de la marca, no el verde clásico */
+.wa-fab{
+  position:fixed;right:24px;bottom:24px;z-index:90;
+  width:46px;height:46px;border-radius:50%;
+  display:grid;place-items:center;color:#fff;
+  background:radial-gradient(120% 120% at 30% 25%,#9bafff,var(--acc) 55%,#5a6ad8);
+  border:1px solid rgba(125,151,255,.55);
+  box-shadow:0 12px 30px rgba(125,151,255,.32), 0 2px 10px rgba(0,0,0,.45);
+  transition:transform .25s var(--ease), box-shadow .25s;
+}
+.wa-fab svg{width:24px;height:24px;position:relative;z-index:1;}
+.wa-fab:hover{
+  transform:translateY(-3px) scale(1.06);
+  box-shadow:0 18px 40px rgba(125,151,255,.5), 0 2px 10px rgba(0,0,0,.45);
+}
+.wa-fab__pulse{
+  position:absolute;inset:0;border-radius:50%;
+  border:2px solid var(--acc);
+  animation:waPulse 2.6s ease-out infinite;
+}
+@keyframes waPulse{
+  0%{transform:scale(1);opacity:.55;}
+  70%{transform:scale(1.55);opacity:0;}
+  100%{opacity:0;}
 }
 
 /* numbered section markers — "design document" language */
@@ -450,6 +481,7 @@ ol,ul{list-style:none;}
   .steps__progress{transition:none;}
   .step::before{transition:none;}
   .card{transition:border-color .25s,background .25s;}
+  .wa-fab__pulse{animation:none;}
 }
 
 /* ============================================================
@@ -488,6 +520,8 @@ ol,ul{list-style:none;}
   .cards{grid-template-columns:1fr;}
   .steps{grid-template-columns:1fr;}
   .hero__meta{gap:24px;}
+  .wa-fab{width:44px;height:44px;right:16px;bottom:16px;}
+  .wa-fab svg{width:23px;height:23px;}
   .metric__sep{display:none;}
   .section{padding:76px 0;}
   .cta{padding:88px 0;}
